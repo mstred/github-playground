@@ -13,4 +13,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           cat /etc/os-release
-          echo ${{ inputs.message{}}}
+          echo ${{ inputs.message }}}
