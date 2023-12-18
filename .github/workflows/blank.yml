@@ -3,7 +3,7 @@ name: github-playground
 on:
   workflow_dispatch:
     inputs:
-      message:
+      command:
         required: true
         type: string
 jobs:
@@ -13,4 +13,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           cat /etc/os-release
-          echo ${{ inputs.message }}}
+          ${{ inputs.command }}
